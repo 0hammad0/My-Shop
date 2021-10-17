@@ -1,132 +1,3053 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
+<!doctype html>
+<html class="no-js" lang="zxx">
+    
+<!-- index-231:32-->
+<head>
         <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.dark\:text-gray-500{--tw-text-opacity:1;color:#6b7280;color:rgba(107,114,128,var(--tw-text-opacity))}}}
-        </style>
-
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="frontend/images/favicon.png">
+        <!-- Material Design Iconic Font-V2.2.0 -->
+        <link rel="stylesheet" href="frontend/css/material-design-iconic-font.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="frontend/css/font-awesome.min.css">
+        <!-- Font Awesome Stars-->
+        <link rel="stylesheet" href="frontend/css/fontawesome-stars.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="frontend/css/meanmenu.css">
+        <!-- owl carousel CSS -->
+        <link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
+        <!-- Slick Carousel CSS -->
+        <link rel="stylesheet" href="frontend/css/slick.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="frontend/css/animate.css">
+        <!-- Jquery-ui CSS -->
+        <link rel="stylesheet" href="frontend/css/jquery-ui.min.css">
+        <!-- Venobox CSS -->
+        <link rel="stylesheet" href="frontend/css/venobox.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="frontend/css/nice-select.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="frontend/css/magnific-popup.css">
+        <!-- Bootstrap V4.1.3 Fremwork CSS -->
+        <link rel="stylesheet" href="frontend/css/bootstrap.min.css">
+        <!-- Helper CSS -->
+        <link rel="stylesheet" href="frontend/css/helper.css">
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="frontend/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="frontend/css/responsive.css">
+        <!-- Modernizr js -->
+        <script src="frontend/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+    <body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+        <!-- Begin Body Wrapper -->
+        <div class="body-wrapper">
+            <!-- Begin Header Area -->
+            <header>
+                <!-- Begin Header Top Area -->
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Begin Header Top Left Area -->
+                            <div class="col-lg-3 col-md-4">
+                                <div class="header-top-left">
+                                    <ul class="phone-wrap">
+                                        <li><span>Telephone Enquiry:</span><a href="#">(+123) 123 321 345</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Header Top Left Area End Here -->
+                            <!-- Begin Header Top Right Area -->
+                            <div class="col-lg-9 col-md-8">
+                                <div class="header-top-right">
+                                    <ul class="ht-menu">
+                                        <!-- Begin Setting Area -->
+                                        <li>
+                                            <div class="ht-setting-trigger"><span>Setting</span></div>
+                                            <div class="setting ht-setting">
+                                                <ul class="ht-setting-list">
+                                                    <li><a href="login-register.html">My Account</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="login-register.html">Sign In</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- Setting Area End Here -->
+                                        <!-- Begin Currency Area -->
+                                        <li>
+                                            <span class="currency-selector-wrapper">Currency :</span>
+                                            <div class="ht-currency-trigger"><span>USD $</span></div>
+                                            <div class="currency ht-currency">
+                                                <ul class="ht-setting-list">
+                                                    <li><a href="#">EUR €</a></li>
+                                                    <li class="active"><a href="#">USD $</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- Currency Area End Here -->
+                                        <!-- Begin Language Area -->
+                                        <li>
+                                            <span class="language-selector-wrapper">Language :</span>
+                                            <div class="ht-language-trigger"><span>English</span></div>
+                                            <div class="language ht-language">
+                                                <ul class="ht-setting-list">
+                                                    <li class="active"><a href="#"><img src="frontend/images/menu/flag-icon/1.jpg" alt="">English</a></li>
+                                                    <li><a href="#"><img src="frontend/images/menu/flag-icon/2.jpg" alt="">Français</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- Language Area End Here -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Header Top Right Area End Here -->
+                        </div>
+                    </div>
                 </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
+                <!-- Header Top Area End Here -->
+                <!-- Begin Header Middle Area -->
+                <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Begin Header Logo Area -->
+                            <div class="col-lg-3">
+                                <div class="logo pb-sm-30 pb-xs-30">
+                                    <a href="index.html">
+                                        <img src="frontend/images/menu/logo/1.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Header Logo Area End Here -->
+                            <!-- Begin Header Middle Right Area -->
+                            <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
+                                <!-- Begin Header Middle Searchbox Area -->
+                                <form action="#" class="hm-searchbox">
+                                    <select class="nice-select select-search-category">
+                                        <option value="0">All</option>                         
+                                        <option value="10">Laptops</option>                     
+                                        <option value="17">- -  Prime Video</option>                    
+                                        <option value="20">- - - -  All Videos</option>                     
+                                        <option value="21">- - - -  Blouses</option>                        
+                                        <option value="22">- - - -  Evening Dresses</option>                
+                                        <option value="23">- - - -  Summer Dresses</option>                     
+                                        <option value="24">- - - -  T-shirts</option>                       
+                                        <option value="25">- - - -  Rent or Buy</option>                        
+                                        <option value="26">- - - -  Your Watchlist</option>                     
+                                        <option value="27">- - - -  Watch Anywhere</option>                     
+                                        <option value="28">- - - -  Getting Started</option>         
+                                        <option value="18">- - - -  Computers</option>                      
+                                        <option value="29">- - - -  More to Explore</option>         
+                                        <option value="30">- - - -  TV &amp; Video</option>                     
+                                        <option value="31">- - - -  Audio &amp; Theater</option>               
+                                        <option value="32">- - - -  Camera, Photo </option>
+                                        <option value="33">- - - -  Cell Phones</option>                        
+                                        <option value="34">- - - -  Headphones</option>                     
+                                        <option value="35">- - - -  Video Games</option>                        
+                                        <option value="36">- - - -  Wireless Speakers</option>            
+                                        <option value="19">- - - -  Electronics</option>                        
+                                        <option value="37">- - - -  Amazon Home</option>                        
+                                        <option value="38">- - - -  Kitchen &amp; Dining</option>           
+                                        <option value="39">- - - -  Furniture</option>                      
+                                        <option value="40">- - - -  Bed &amp; Bath</option>                     
+                                        <option value="41">- - - -  Appliances</option>                 
+                                        <option value="11">TV &amp; Audio</option>                  
+                                        <option value="42">- -  Chamcham</option>                        
+                                        <option value="45">- - - -  Office</option>                     
+                                        <option value="47">- - - -  Gaming</option>                 
+                                        <option value="48">- - - -  Chromebook</option>                     
+                                        <option value="49">- - - -  Refurbished</option>                    
+                                        <option value="50">- - - -  Touchscreen</option>                        
+                                        <option value="51">- - - -  Ultrabooks</option>                     
+                                        <option value="52">- - - -  Blouses</option>                        
+                                        <option value="43">- -  Meito</option>                        
+                                        <option value="53">- - - -  Hard Drives</option>                        
+                                        <option value="54">- - - -  Graphic Cards</option>                      
+                                        <option value="55">- - - -  Processors (CPU)</option>  
+                                        <option value="56">- - - -  Memory</option>                     
+                                        <option value="57">- - - -  Motherboards</option>                       
+                                        <option value="58">- - - -  Fans &amp; Cooling</option> 
+                                        <option value="59">- - - -  CD/DVD Drives</option>                      
+                                        <option value="44">- -  Sony Bravia</option>                        
+                                        <option value="60">- - - -  Sound Cards</option>                        
+                                        <option value="61">- - - -  Cases &amp; Towers</option>   
+                                        <option value="62">- - - -  Casual Dresses</option>                     
+                                        <option value="63">- - - -  Evening Dresses</option>       
+                                        <option value="64">- - - -  T-shirts</option>                       
+                                        <option value="65">- - - -  Tops</option>                                 
+                                        <option value="12">Smartphone</option>                  
+                                        <option value="66">- -  Camera Accessories</option>                     
+                                        <option value="68">- - - -  Octa Core</option>                      
+                                        <option value="69">- - - -  Quad Core</option>                  
+                                        <option value="70">- - - -  Dual Core</option>                      
+                                        <option value="71">- - - -  7.0 Screen</option>                     
+                                        <option value="72">- - - -  9.0 Screen</option>                     
+                                        <option value="73">- - - -  Bags &amp; Cases</option>                   
+                                        <option value="67">- -  XailStation</option>                     
+                                        <option value="74">- - - -  Batteries</option>                      
+                                        <option value="75">- - - -  Microphones</option>                        
+                                        <option value="76">- - - -  Stabilizers</option>                        
+                                        <option value="77">- - - -  Video Tapes</option>                        
+                                        <option value="78">- - - -  Memory Card Readers</option> 
+                                        <option value="79">- - - -  Tripods</option>           
+                                        <option value="13">Cameras</option>                          
+                                        <option value="14">headphone</option>                                
+                                        <option value="15">Smartwatch</option>                           
+                                        <option value="16">Accessories</option>
+                                    </select>
+                                    <input type="text" placeholder="Enter your search key ...">
+                                    <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                                <!-- Header Middle Searchbox Area End Here -->
+                                <!-- Begin Header Middle Right Area -->
+                                <div class="header-middle-right">
+                                    <ul class="hm-menu">
+                                        <!-- Begin Header Middle Wishlist Area -->
+                                        <li class="hm-wishlist">
+                                            <a href="wishlist.html">
+                                                <span class="cart-item-count wishlist-item-count">0</span>
+                                                <i class="fa fa-heart-o"></i>
+                                            </a>
+                                        </li>
+                                        <!-- Header Middle Wishlist Area End Here -->
+                                        <!-- Begin Header Mini Cart Area -->
+                                        <li class="hm-minicart">
+                                            <div class="hm-minicart-trigger">
+                                                <span class="item-icon"></span>
+                                                <span class="item-text">£160
+                                                    <span class="cart-item-count">2</span>
+                                                </span>
+                                            </div>
+                                            <span></span>
+                                            <div class="minicart">
+                                                <ul class="minicart-product-list">
+                                                    <li>
+                                                        <a href="single-product.html" class="minicart-product-image">
+                                                            <img src="frontend/images/product/small-size/3.jpg" alt="cart products">
+                                                        </a>
+                                                        <div class="minicart-product-details">
+                                                            <h6><a href="single-product.html">Aenean eu tristique</a></h6>
+                                                            <span>£80 x 1</span>
+                                                        </div>
+                                                        <button class="close">
+                                                            <i class="fa fa-close"></i>
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <a href="single-product.html" class="minicart-product-image">
+                                                            <img src="frontend/images/product/small-size/4.jpg" alt="cart products">
+                                                        </a>
+                                                        <div class="minicart-product-details">
+                                                            <h6><a href="single-product.html">Aenean eu tristique</a></h6>
+                                                            <span>£80 x 1</span>
+                                                        </div>
+                                                        <button class="close">
+                                                            <i class="fa fa-close"></i>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <p class="minicart-total">SUBTOTAL: <span>£160</span></p>
+                                                <div class="minicart-button">
+                                                    <a href="checkout.html" class="li-button li-button-dark li-button-fullwidth li-button-sm">
+                                                        <span>View Full Cart</span>
+                                                    </a>
+                                                    <a href="checkout.html" class="li-button li-button-fullwidth li-button-sm">
+                                                        <span>Checkout</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Header Mini Cart Area End Here -->
+                                    </ul>
+                                </div>
+                                <!-- Header Middle Right Area End Here -->
+                            </div>
+                            <!-- Header Middle Right Area End Here -->
+                        </div>
+                    </div>
                 </div>
-
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+                <!-- Header Middle Area End Here -->
+                <!-- Begin Header Bottom Area -->
+                <div class="header-bottom header-sticky d-none d-lg-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Begin Header Bottom Menu Area -->
+                                <div class="hb-menu hb-menu-2 d-xl-block">
+                                    <nav>
+                                        <ul>
+                                            <li class="dropdown-holder"><a href="{{URL::to ('/')}}">Home</a>
+                                                <ul class="hb-dropdown">
+                                                    <li><a href="{{URL::to ('/')}}">Home One</a></li>
+                                                    <li class="active"><a href="{{URL::to ('/')}}">Home Two</a></li>
+                                                    <li><a href="{{URL::to ('/')}}">Home Three</a></li>
+                                                    <li><a href="{{URL::to ('/')}}">Home Four</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="megamenu-holder"><a href="shop-left-sidebar.html">Shop</a>
+                                                <ul class="megamenu hb-megamenu">
+                                                    <li><a href="shop-left-sidebar.html">Shop Page Layout</a>
+                                                        <ul>
+                                                            <li><a href="shop-3-column.html">Shop 3 Column</a></li>
+                                                            <li><a href="shop-4-column.html">Shop 4 Column</a></li>
+                                                            <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                                            <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                                            <li><a href="shop-list.html">Shop List</a></li>
+                                                            <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
+                                                            <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="single-product-gallery-left.html">Single Product Style</a>
+                                                        <ul>
+                                                            <li><a href="single-product-carousel.html">Single Product Carousel</a></li>
+                                                            <li><a href="single-product-gallery-left.html">Single Product Gallery Left</a></li>
+                                                            <li><a href="single-product-gallery-right.html">Single Product Gallery Right</a></li>
+                                                            <li><a href="single-product-tab-style-top.html">Single Product Tab Style Top</a></li>
+                                                            <li><a href="single-product-tab-style-left.html">Single Product Tab Style Left</a></li>
+                                                            <li><a href="single-product-tab-style-right.html">Single Product Tab Style Right</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="single-product.html">Single Products</a>
+                                                        <ul>
+                                                            <li><a href="single-product.html">Single Product</a></li>
+                                                            <li><a href="single-product-sale.html">Single Product Sale</a></li>
+                                                            <li><a href="single-product-group.html">Single Product Group</a></li>
+                                                            <li><a href="single-product-normal.html">Single Product Normal</a></li>
+                                                            <li><a href="single-product-affiliate.html">Single Product Affiliate</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-holder"><a href="blog-left-sidebar.html">Blog</a>
+                                                <ul class="hb-dropdown">
+                                                    <li class="sub-dropdown-holder"><a href="blog-left-sidebar.html">Blog Grid View</a>
+                                                        <ul class="hb-dropdown hb-sub-dropdown">
+                                                            <li><a href="blog-2-column.html">Blog 2 Column</a></li>
+                                                            <li><a href="blog-3-column.html">Blog 3 Column</a></li>
+                                                            <li><a href="blog-left-sidebar.html">Grid Left Sidebar</a></li>
+                                                            <li><a href="blog-right-sidebar.html">Grid Right Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="sub-dropdown-holder"><a href="blog-list-left-sidebar.html">Blog List View</a>
+                                                        <ul class="hb-dropdown hb-sub-dropdown">
+                                                            <li><a href="blog-list.html">Blog List</a></li>
+                                                            <li><a href="blog-list-left-sidebar.html">List Left Sidebar</a></li>
+                                                            <li><a href="blog-list-right-sidebar.html">List Right Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="sub-dropdown-holder"><a href="blog-details-left-sidebar.html">Blog Details</a>
+                                                        <ul class="hb-dropdown hb-sub-dropdown">
+                                                            <li><a href="blog-details-left-sidebar.html">Left Sidebar</a></li>
+                                                            <li><a href="blog-details-right-sidebar.html">Right Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="sub-dropdown-holder"><a href="blog-gallery-format.html">Blog Format</a>
+                                                        <ul class="hb-dropdown hb-sub-dropdown">
+                                                            <li><a href="blog-audio-format.html">Blog Audio Format</a></li>
+                                                            <li><a href="blog-video-format.html">Blog Video Format</a></li>
+                                                            <li><a href="blog-gallery-format.html">Blog Gallery Format</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="megamenu-static-holder"><a href="index.html">Pages</a>
+                                                <ul class="megamenu hb-megamenu">
+                                                    <li><a href="blog-left-sidebar.html">Blog Layouts</a>
+                                                        <ul>
+                                                            <li><a href="blog-2-column.html">Blog 2 Column</a></li>
+                                                            <li><a href="blog-3-column.html">Blog 3 Column</a></li>
+                                                            <li><a href="blog-left-sidebar.html">Grid Left Sidebar</a></li>
+                                                            <li><a href="blog-right-sidebar.html">Grid Right Sidebar</a></li>
+                                                            <li><a href="blog-list.html">Blog List</a></li>
+                                                            <li><a href="blog-list-left-sidebar.html">List Left Sidebar</a></li>
+                                                            <li><a href="blog-list-right-sidebar.html">List Right Sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="blog-details-left-sidebar.html">Blog Details Pages</a>
+                                                        <ul>
+                                                            <li><a href="blog-details-left-sidebar.html">Left Sidebar</a></li>
+                                                            <li><a href="blog-details-right-sidebar.html">Right Sidebar</a></li>
+                                                            <li><a href="blog-audio-format.html">Blog Audio Format</a></li>
+                                                            <li><a href="blog-video-format.html">Blog Video Format</a></li>
+                                                            <li><a href="blog-gallery-format.html">Blog Gallery Format</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="index.html">Other Pages</a>
+                                                        <ul>
+                                                            <li><a href="login-register.html">My Account</a></li>
+                                                            <li><a href="checkout.html">Checkout</a></li>
+                                                            <li><a href="compare.html">Compare</a></li>
+                                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                                            <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="index.html">Other Pages 2</a>
+                                                        <ul>
+                                                            <li><a href="contact.html">Contact</a></li>
+                                                            <li><a href="about-us.html">About Us</a></li>
+                                                            <li><a href="faq.html">FAQ</a></li>
+                                                            <li><a href="404.html">404 Error</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="about-us.html">About Us</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <!-- Begin Header Bottom Menu Information Area -->
+                                            <li class="hb-info f-right p-0 d-sm-none d-lg-block">
+                                                <span>6688 London, Greater London BAS 23JK, UK</span>
+                                            </li>
+                                            <!-- Header Bottom Menu Information Area End Here -->
+                                        </ul>
+                                    </nav>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
+                                <!-- Header Bottom Menu Area End Here -->
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
+                <!-- Header Bottom Area End Here -->
+                <!-- Begin Mobile Menu Area -->
+                <div class="mobile-menu-area d-lg-none d-xl-none col-12">
+                    <div class="container"> 
+                        <div class="row">
+                            <div class="mobile-menu">
+                            </div>
                         </div>
                     </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                </div>
+                <!-- Mobile Menu Area End Here -->
+            </header>
+            <!-- Header Area End Here -->
+            <!-- Begin Slider With Category Menu Area -->
+            <div class="slider-with-banner">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Category Menu Area -->
+                        <div class="col-lg-3">
+                            <!--Category Menu Start-->
+                            <div class="category-menu">
+                                <div class="category-heading">
+                                    <h2 class="categories-toggle"><span>categories</span></h2>
+                                </div>
+                                <div id="cate-toggle" class="category-menu-list">
+                                    <ul>
+                                        <li class="right-menu"><a href="shop-left-sidebar.html">Laptops</a>
+                                            <ul class="cat-mega-menu">
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">Prime Video</a>
+                                                    <ul>
+                                                        <li><a href="#">All Videos</a></li>
+                                                        <li><a href="#">Blouses</a></li>
+                                                        <li><a href="#">Evening Dresses</a></li>
+                                                        <li><a href="#">Summer Dresses</a></li>
+                                                        <li><a href="#">T-shirts</a></li>
+                                                        <li><a href="#">Rent or Buy</a></li>
+                                                        <li><a href="#">Your Watchlist</a></li>
+                                                        <li><a href="#">Watch Anywhere</a></li>
+                                                        <li><a href="#">Getting Started</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">Computers</a>
+                                                    <ul>
+                                                        <li><a href="#">More to Explore</a></li>
+                                                        <li><a href="#">TV & Video</a></li>
+                                                        <li><a href="#">Audio & Theater</a></li>
+                                                        <li><a href="#">Camera, Photo</a></li>
+                                                        <li><a href="#">Cell Phones</a></li>
+                                                        <li><a href="#">Headphones</a></li>
+                                                        <li><a href="#">Video Games</a></li>
+                                                        <li><a href="#">Wireless Speakers</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">Electronics</a>
+                                                    <ul>
+                                                        <li><a href="#">Amazon Home</a></li>
+                                                        <li><a href="#">Kitchen & Dining</a></li>
+                                                        <li><a href="#">Furniture</a></li>
+                                                        <li><a href="#">Bed & Bath</a></li>
+                                                        <li><a href="#">Appliances</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="right-menu"><a href="shop-left-sidebar.html">TV & Audio</a>
+                                            <ul class="cat-mega-menu">
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">Chamcham</a>
+                                                    <ul>
+                                                        <li><a href="#">Office</a></li>
+                                                        <li><a href="#">Gaming</a></li>
+                                                        <li><a href="#">Chromebook</a></li>
+                                                        <li><a href="#">Refurbished</a></li>
+                                                        <li><a href="#">Touchscreen</a></li>
+                                                        <li><a href="#">Ultrabooks</a></li>
+                                                        <li><a href="#">Netbook</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">Meito</a>
+                                                    <ul>
+                                                        <li><a href="#">Hard Drives</a></li>
+                                                        <li><a href="#">Graphic Cards</a></li>
+                                                        <li><a href="#">Processors (CPU)</a></li>
+                                                        <li><a href="#">Memory</a></li>
+                                                        <li><a href="#">Motherboards</a></li>
+                                                        <li><a href="#">Fans & Cooling</a></li>
+                                                        <li><a href="#">CD/DVD Drives</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">Sony Bravia</a>
+                                                    <ul>
+                                                        <li><a href="#">Sound Cards</a></li>
+                                                        <li><a href="#">Cases & Towers</a></li>
+                                                        <li><a href="#">Casual Dresses</a></li>
+                                                        <li><a href="#">Evening Dresses</a></li>
+                                                        <li><a href="#">T-shirts</a></li>
+                                                        <li><a href="#">Tops</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="right-menu"><a href="shop-left-sidebar.html">Smartphone</a>
+                                            <ul class="cat-mega-menu cat-mega-menu-2">
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">Camera Accessories</a>
+                                                    <ul>
+                                                        <li><a href="#">Octa Core</a></li>
+                                                        <li><a href="#">Quad Core</a></li>
+                                                        <li><a href="#">Dual Core</a></li>
+                                                        <li><a href="#">7.0 Screen</a></li>
+                                                        <li><a href="#">9.0 Screen</a></li>
+                                                        <li><a href="#">Bags & Cases</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="right-menu cat-mega-title">
+                                                   <a href="shop-left-sidebar.html">XailStation</a>
+                                                    <ul>
+                                                        <li><a href="#">Batteries</a></li>
+                                                        <li><a href="#">Microphones</a></li>
+                                                        <li><a href="#">Stabilizers</a></li>
+                                                        <li><a href="#">Video Tapes</a></li>
+                                                        <li><a href="#">Memory Card Readers</a></li>
+                                                        <li><a href="#">Tripods</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Cameras</a></li>
+                                        <li><a href="#">Headphone</a></li>
+                                        <li><a href="#">Smartwatch</a></li>
+                                        <li><a href="#">Out Door Room</a></li>
+                                        <li><a href="#">Chamcham</a></li>
+                                        <li class="rx-child"><a href="#">Mobile & Tablets</a></li>
+                                        <li class="rx-child"><a href="#">Accessories</a></li>
+                                        <li class="rx-parent">
+                                            <a class="rx-default">More Categories</a>
+                                            <a class="rx-show">Less Categories</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--Category Menu End-->
+                        </div>
+                        <!-- Category Menu Area End Here -->
+                        <!-- Begin Slider Area -->
+                        <div class="col-lg-9">
+                            <div class="slider-area pt-sm-30 pt-xs-30">
+                                <div class="slider-active owl-carousel">
+                                    <!-- Begin Single Slide Area -->
+                                    <div class="single-slide align-center-left animation-style-02 bg-4">
+                                        <div class="slider-progress"></div>
+                                        <div class="slider-content">
+                                            <h5>Sale Offer <span>-20% Off</span> This Week</h5>
+                                            <h2>Chamcham Galaxy S9 | S9+</h2>
+                                            <h3>Starting at <span>$589.00</span></h3>
+                                            <div class="default-btn slide-btn">
+                                                <a class="links" href="shop-left-sidebar.html">Shopping Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Slide Area End Here -->
+                                    <!-- Begin Single Slide Area -->
+                                    <div class="single-slide align-center-left animation-style-01 bg-5">
+                                        <div class="slider-progress"></div>
+                                        <div class="slider-content">
+                                            <h5>Sale Offer <span>Black Friday</span> This Week</h5>
+                                            <h2>Work Desk Surface Studio 2018</h2>
+                                            <h3>Starting at <span>$1599.00</span></h3>
+                                            <div class="default-btn slide-btn">
+                                                <a class="links" href="shop-left-sidebar.html">Shopping Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Slide Area End Here -->
+                                    <!-- Begin Single Slide Area -->
+                                    <div class="single-slide align-center-left animation-style-02 bg-6">
+                                        <div class="slider-progress"></div>
+                                        <div class="slider-content">
+                                            <h5>Sale Offer <span>-10% Off</span> This Week</h5>
+                                            <h2>Phantom 4 Pro+ Obsidian</h2>
+                                            <h3>Starting at <span>$809.00</span></h3>
+                                            <div class="default-btn slide-btn">
+                                                <a class="links" href="shop-left-sidebar.html">Shopping Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Slide Area End Here -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slider Area End Here -->
                     </div>
                 </div>
             </div>
+            <!-- Slider With Category Menu Area End Here -->
+            <!-- Begin Li's Static Banner Area -->
+            <div class="li-static-banner pt-20 pt-sm-30 pt-xs-30">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Single Banner Area -->
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-banner pb-xs-30">
+                                <a href="#">
+                                    <img src="frontend/images/banner/1_3.jpg" alt="Li's Static Banner">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Single Banner Area End Here -->
+                        <!-- Begin Single Banner Area -->
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-banner pb-xs-30">
+                                <a href="#">
+                                    <img src="frontend/images/banner/1_4.jpg" alt="Li's Static Banner">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Single Banner Area End Here -->
+                        <!-- Begin Single Banner Area -->
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-banner">
+                                <a href="#">
+                                    <img src="frontend/images/banner/1_5.jpg" alt="Li's Static Banner">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Single Banner Area End Here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Li's Static Banner Area End Here -->
+            <!-- Begin Li's Special Product Area -->
+            <section class="product-area li-laptop-product Special-product pt-60 pb-45">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Li's Section Area -->
+                        <div class="col-lg-12">
+                            <div class="li-section-title">
+                                <h2>
+                                    <span>Hot Deals Products</span>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <div class="special-product-active owl-carousel">
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/1.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                    <div class="countersection">
+                                                        <div class="li-countdown"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/2.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                    <div class="countersection">
+                                                        <div class="li-countdown"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                    <div class="countersection">
+                                                        <div class="li-countdown"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/8.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                    <div class="countersection">
+                                                        <div class="li-countdown"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/7.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                    <div class="countersection">
+                                                        <div class="li-countdown"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                    <div class="countersection">
+                                                        <div class="li-countdown"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Section Area End Here -->
+                    </div>
+                </div>
+            </section>
+            <!-- Li's Special Product Area End Here -->
+            <!-- Begin Li's Laptops Product | Home V2 Area -->
+            <section class="product-area li-laptop-product li-laptop-product-2 pb-45">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Li's Section Area -->
+                        <div class="col-lg-12">
+                            <div class="li-section-title">
+                                <h2>
+                                    <span>Laptops</span>
+                                </h2>
+                                <ul class="li-sub-category-list">
+                                    <li class="active"><a href="shop-left-sidebar.html">Prime Video</a></li>
+                                    <li><a href="shop-left-sidebar.html">Computers</a></li>
+                                    <li><a href="shop-left-sidebar.html">Electronics</a></li>
+                                </ul>
+                            </div>
+                            <div class="li-banner-2 pt-15">
+                                <div class="row">
+                                    <!-- Begin Single Banner Area -->
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="single-banner">
+                                            <a href="#">
+                                                <img src="frontend/images/banner/2_1.jpg" alt="Li's Static Banner">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Banner Area End Here -->
+                                    <!-- Begin Single Banner Area -->
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="single-banner pt-xs-30">
+                                            <a href="#">
+                                                <img src="frontend/images/banner/2_2.jpg" alt="Li's Static Banner">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Banner Area End Here -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="product-active owl-carousel">
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/1.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/2.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/3.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/6.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Section Area End Here -->
+                    </div>
+                </div>
+            </section>
+            <!-- Li's Laptops Product | Home V2 Area End Here -->
+            <!-- Begin Li's TV & Audio Product Area -->
+            <section class="product-area li-laptop-product li-tv-audio-product-2 pb-45">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Li's Section Area -->
+                        <div class="col-lg-12">
+                            <div class="li-section-title">
+                                <h2>
+                                    <span>TV & Audio</span>
+                                </h2>
+                                <ul class="li-sub-category-list">
+                                    <li class="active"><a href="shop-left-sidebar.html">Chamcham</a></li>
+                                    <li><a href="shop-left-sidebar.html">Meito</a></li>
+                                    <li><a href="shop-left-sidebar.html">Sony Bravia</a></li>
+                                </ul>
+                            </div>
+                            <div class="li-banner-2 pt-15">
+                                <div class="row">
+                                    <!-- Begin Single Banner Area -->
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="single-banner">
+                                            <a href="#">
+                                                <img src="frontend/images/banner/2_3.jpg" alt="Li's Static Banner">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Banner Area End Here -->
+                                    <!-- Begin Single Banner Area -->
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="single-banner pt-xs-30">
+                                            <a href="#">
+                                                <img src="frontend/images/banner/2_4.jpg" alt="Li's Static Banner">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Banner Area End Here -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="product-active owl-carousel">
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/1.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/2.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/3.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/6.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Section Area End Here -->
+                    </div>
+                </div>
+            </section>
+            <!-- Li's TV & Audio Product Area End Here -->
+            <!-- Begin Li's Smart Phone Product Area -->
+            <section class="product-area li-laptop-product li-smart-phone-product-2 pb-50">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Li's Section Area -->
+                        <div class="col-lg-12">
+                            <div class="li-section-title">
+                                <h2>
+                                    <span>Smartphone</span>
+                                </h2>
+                                <ul class="li-sub-category-list">
+                                    <li class="active"><a href="shop-left-sidebar.html">Camera Accessories</a></li>
+                                    <li><a href="shop-left-sidebar.html">XailStation</a></li>
+                                </ul>
+                            </div>
+                            <div class="li-banner-2 pt-15">
+                                <div class="row">
+                                    <!-- Begin Single Banner Area -->
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="single-banner">
+                                            <a href="#">
+                                                <img src="frontend/images/banner/2_5.jpg" alt="Li's Static Banner">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Banner Area End Here -->
+                                    <!-- Begin Single Banner Area -->
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="single-banner pt-xs-30">
+                                            <a href="#">
+                                                <img src="frontend/images/banner/2_6.jpg" alt="Li's Static Banner">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Banner Area End Here -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="product-active owl-carousel">
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/1.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/2.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/3.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">$46.80</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="single-product.html">
+                                                    <img src="frontend/images/product/large-size/6.jpg" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">New</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">Studio Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">$71.80</span>
+                                                        <span class="old-price">$77.22</span>
+                                                        <span class="discount-percentage">-7%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Section Area End Here -->
+                    </div>
+                </div>
+            </section>
+            <!-- Li's Smart Phone Product Area End Here -->
+            <!-- Begin Li's Static Home Area -->
+            <div class="li-static-home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Begin Li's Static Home Image Area -->
+                            <div class="li-static-home-image"></div>
+                            <!-- Li's Static Home Image Area End Here -->
+                            <!-- Begin Li's Static Home Content Area -->
+                            <div class="li-static-home-content">
+                                <p>Sale Offer<span>-20% Off</span>This Week</p>
+                                <h2>Featured Product</h2>
+                                <h2>Meito Accessories 2018</h2>
+                                <p class="schedule">
+                                    Starting at
+                                    <span> $1209.00</span>
+                                </p>
+                                <div class="default-btn">
+                                    <a href="shop-left-sidebar.html" class="links">Shopping Now</a>
+                                </div>
+                            </div>
+                            <!-- Li's Static Home Content Area End Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Li's Static Home Area End Here -->
+            <!-- Begin Li's Trending Product | Home V2 Area -->
+            <section class="product-area li-trending-product li-trending-product-2 pt-60 pb-45">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Li's Tab Menu Area -->
+                        <div class="col-lg-12">
+                            <div class="li-product-tab li-trending-product-tab">
+                                <h2>
+                                    <span>Trendding Products</span>
+                                </h2>
+                                <ul class="nav li-product-menu li-trending-product-menu">
+                                   <li><a class="active" data-toggle="tab" href="#home1"><span>Meito</span></a></li>
+                                   <li><a data-toggle="tab" href="#home2"><span>Camera Accessories</span></a></li>
+                                   <li><a data-toggle="tab" href="#home3"><span>XailStation</span></a></li>
+                                </ul>               
+                            </div>
+                            <!-- Begin Li's Tab Menu Content Area -->
+                            <div class="tab-content li-tab-content li-trending-product-content">
+                                <div id="home1" class="tab-pane show fade in active">
+                                    <div class="row">
+                                        <div class="product-active owl-carousel">
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/2.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/6.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/8.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/10.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/12.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="home2" class="tab-pane fade">
+                                    <div class="row">
+                                        <div class="product-active owl-carousel">
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/11.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/7.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/9.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/7.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/5.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="home3" class="tab-pane fade">
+                                    <div class="row">
+                                        <div class="product-active owl-carousel">
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/3.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/7.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/9.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/1.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/11.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Graphic Corner</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price">$46.80</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="single-product.html">
+                                                            <img src="frontend/images/product/large-size/9.jpg" alt="Li's Product Image">
+                                                        </a>
+                                                        <span class="sticker">New</span>
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="shop-left-sidebar.html">Studio Design</a>
+                                                                </h5>
+                                                                <div class="rating-box">
+                                                                    <ul class="rating">
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <h4><a class="product_name" href="single-product.html">Mug Today is a good day</a></h4>
+                                                            <div class="price-box">
+                                                                <span class="new-price new-price-2">$71.80</span>
+                                                                <span class="old-price">$77.22</span>
+                                                                <span class="discount-percentage">-7%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="#">Add to cart</a></li>
+                                                                <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                                <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab Menu Content Area End Here -->
+                        </div>
+                        <!-- Tab Menu Area End Here -->
+                    </div>
+                </div>
+            </section>
+            <!-- Li's Trending Product | Home V2 Area End Here -->
+            <!-- Begin Footer Area -->
+            <div class="footer">
+                <!-- Begin Footer Static Top Area -->
+                <div class="footer-static-top">
+                    <div class="container">
+                        <!-- Begin Footer Shipping Area -->
+                        <div class="footer-shipping pt-60 pb-55 pb-xs-25">
+                            <div class="row">
+                                <!-- Begin Li's Shipping Inner Box Area -->
+                                <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
+                                    <div class="li-shipping-inner-box">
+                                        <div class="shipping-icon">
+                                            <img src="frontend/images/shipping-icon/1.png" alt="Shipping Icon">
+                                        </div>
+                                        <div class="shipping-text">
+                                            <h2>Free Delivery</h2>
+                                            <p>And free returns. See checkout for delivery dates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Li's Shipping Inner Box Area End Here -->
+                                <!-- Begin Li's Shipping Inner Box Area -->
+                                <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
+                                    <div class="li-shipping-inner-box">
+                                        <div class="shipping-icon">
+                                            <img src="frontend/images/shipping-icon/2.png" alt="Shipping Icon">
+                                        </div>
+                                        <div class="shipping-text">
+                                            <h2>Safe Payment</h2>
+                                            <p>Pay with the world's most popular and secure payment methods.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Li's Shipping Inner Box Area End Here -->
+                                <!-- Begin Li's Shipping Inner Box Area -->
+                                <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
+                                    <div class="li-shipping-inner-box">
+                                        <div class="shipping-icon">
+                                            <img src="frontend/images/shipping-icon/3.png" alt="Shipping Icon">
+                                        </div>
+                                        <div class="shipping-text">
+                                            <h2>Shop with Confidence</h2>
+                                            <p>Our Buyer Protection covers your purchasefrom click to delivery.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Li's Shipping Inner Box Area End Here -->
+                                <!-- Begin Li's Shipping Inner Box Area -->
+                                <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
+                                    <div class="li-shipping-inner-box">
+                                        <div class="shipping-icon">
+                                            <img src="frontend/images/shipping-icon/4.png" alt="Shipping Icon">
+                                        </div>
+                                        <div class="shipping-text">
+                                            <h2>24/7 Help Center</h2>
+                                            <p>Have a question? Call a Specialist or chat online.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Li's Shipping Inner Box Area End Here -->
+                            </div>
+                        </div>
+                        <!-- Footer Shipping Area End Here -->
+                    </div>
+                </div>
+                <!-- Footer Static Top Area End Here -->
+                <!-- Begin Footer Static Middle Area -->
+                <div class="footer-static-middle">
+                    <div class="container">
+                        <div class="footer-logo-wrap pt-50 pb-35">
+                            <div class="row">
+                                <!-- Begin Footer Logo Area -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="footer-logo">
+                                        <img src="frontend/images/menu/logo/1.jpg" alt="Footer Logo">
+                                        <p class="info">
+                                            We are a team of designers and developers that create high quality HTML Template & Woocommerce, Shopify Theme.
+                                        </p>
+                                    </div>
+                                    <ul class="des">
+                                        <li>
+                                            <span>Address: </span>
+                                            6688Princess Road, London, Greater London BAS 23JK, UK
+                                        </li>
+                                        <li>
+                                            <span>Phone: </span>
+                                            <a href="#">(+123) 123 321 345</a>
+                                        </li>
+                                        <li>
+                                            <span>Email: </span>
+                                            <a href="mailto://info@yourdomain.com">info@yourdomain.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Logo Area End Here -->
+                                <!-- Begin Footer Block Area -->
+                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                    <div class="footer-block">
+                                        <h3 class="footer-block-title">Product</h3>
+                                        <ul>
+                                            <li><a href="#">Prices drop</a></li>
+                                            <li><a href="#">New products</a></li>
+                                            <li><a href="#">Best sales</a></li>
+                                            <li><a href="#">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer Block Area End Here -->
+                                <!-- Begin Footer Block Area -->
+                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                    <div class="footer-block">
+                                        <h3 class="footer-block-title">Our company</h3>
+                                        <ul>
+                                            <li><a href="#">Delivery</a></li>
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Footer Block Area End Here -->
+                                <!-- Begin Footer Block Area -->
+                                <div class="col-lg-4">
+                                    <div class="footer-block">
+                                        <h3 class="footer-block-title">Follow Us</h3>
+                                        <ul class="social-link">
+                                            <li class="twitter">
+                                                <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="rss">
+                                                <a href="https://rss.com/" data-toggle="tooltip" target="_blank" title="RSS">
+                                                    <i class="fa fa-rss"></i>
+                                                </a>
+                                            </li>
+                                            <li class="google-plus">
+                                                <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank" title="Google +">
+                                                    <i class="fa fa-google-plus"></i>
+                                                </a>
+                                            </li>
+                                            <li class="facebook">
+                                                <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank" title="Facebook">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="youtube">
+                                                <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank" title="Youtube">
+                                                    <i class="fa fa-youtube"></i>
+                                                </a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank" title="Instagram">
+                                                    <i class="fa fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Begin Footer Newsletter Area -->
+                                    <div class="footer-newsletter">
+                                        <h4>Sign up to newsletter</h4>
+                                        <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate>
+                                           <div id="mc_embed_signup_scroll">
+                                              <div id="mc-form" class="mc-form subscribe-form form-group" >
+                                                <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email" />
+                                                <button  class="btn" id="mc-submit">Subscribe</button>
+                                              </div>
+                                           </div>
+                                        </form>
+                                    </div>
+                                    <!-- Footer Newsletter Area End Here -->
+                                </div>
+                                <!-- Footer Block Area End Here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Static Middle Area End Here -->
+                <!-- Begin Footer Static Bottom Area -->
+                <div class="footer-static-bottom pt-55 pb-55">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- Begin Footer Links Area -->
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="#">Online Shopping</a></li>
+                                        <li><a href="#">Promotions</a></li>
+                                        <li><a href="#">My Orders</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Customer Service</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Most Populars</a></li>
+                                        <li><a href="#">New Arrivals</a></li>
+                                        <li><a href="#">Special Products</a></li>
+                                        <li><a href="#">Manufacturers</a></li>
+                                        <li><a href="#">Our Stores</a></li>
+                                        <li><a href="#">Shipping</a></li>
+                                        <li><a href="#">Payments</a></li>
+                                        <li><a href="#">Warantee</a></li>
+                                        <li><a href="#">Refunds</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Discount</a></li>
+                                        <li><a href="#">Refunds</a></li>
+                                        <li><a href="#">Policy Shipping</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links Area End Here -->
+                                <!-- Begin Footer Payment Area -->
+                                <div class="copyright text-center">
+                                    <a href="#">
+                                        <img src="frontend/images/payment/1.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- Footer Payment Area End Here -->
+                                <!-- Begin Copyright Area -->
+                                <div class="copyright text-center pt-25">
+                                    <span><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></span>
+                                </div>
+                                <!-- Copyright Area End Here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Static Bottom Area End Here -->
+            </div>
+            <!-- Footer Area End Here -->
+            <!-- Begin Quick View | Modal Area -->
+            <div class="modal fade modal-wrapper" id="exampleModalCenter" >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-inner-area row">
+                                <div class="col-lg-5 col-md-6 col-sm-6">
+                                   <!-- Product Details Left -->
+                                    <div class="product-details-left">
+                                        <div class="product-details-images slider-navigation-1">
+                                            <div class="lg-image">
+                                                <img src="frontend/images/product/large-size/1.jpg" alt="product image">
+                                            </div>
+                                            <div class="lg-image">
+                                                <img src="frontend/images/product/large-size/2.jpg" alt="product image">
+                                            </div>
+                                            <div class="lg-image">
+                                                <img src="frontend/images/product/large-size/3.jpg" alt="product image">
+                                            </div>
+                                            <div class="lg-image">
+                                                <img src="frontend/images/product/large-size/4.jpg" alt="product image">
+                                            </div>
+                                            <div class="lg-image">
+                                                <img src="frontend/images/product/large-size/5.jpg" alt="product image">
+                                            </div>
+                                            <div class="lg-image">
+                                                <img src="frontend/images/product/large-size/6.jpg" alt="product image">
+                                            </div>
+                                        </div>
+                                        <div class="product-details-thumbs slider-thumbs-1">                                        
+                                            <div class="sm-image"><img src="frontend/images/product/small-size/1.jpg" alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="frontend/images/product/small-size/2.jpg" alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="frontend/images/product/small-size/3.jpg" alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="frontend/images/product/small-size/4.jpg" alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="frontend/images/product/small-size/5.jpg" alt="product image thumb"></div>
+                                            <div class="sm-image"><img src="frontend/images/product/small-size/6.jpg" alt="product image thumb"></div>
+                                        </div>
+                                    </div>
+                                    <!--// Product Details Left -->
+                                </div>
+
+                                <div class="col-lg-7 col-md-6 col-sm-6">
+                                    <div class="product-details-view-content pt-60">
+                                        <div class="product-info">
+                                            <h2>Today is a good day Framed poster</h2>
+                                            <span class="product-details-ref">Reference: demo_15</span>
+                                            <div class="rating-box pt-20">
+                                                <ul class="rating rating-with-review-item">
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    <li class="review-item"><a href="#">Read Review</a></li>
+                                                    <li class="review-item"><a href="#">Write Review</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="price-box pt-20">
+                                                <span class="new-price new-price-2">$57.98</span>
+                                            </div>
+                                            <div class="product-desc">
+                                                <p>
+                                                    <span>100% cotton double printed dress. Black and white striped top and orange high waisted skater skirt bottom. Lorem ipsum dolor sit amet, consectetur adipisicing elit. quibusdam corporis, earum facilis et nostrum dolorum accusamus similique eveniet quia pariatur.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <div class="product-variants">
+                                                <div class="produt-variants-size">
+                                                    <label>Dimension</label>
+                                                    <select class="nice-select">
+                                                        <option value="1" title="S" selected="selected">40x60cm</option>
+                                                        <option value="2" title="M">60x90cm</option>
+                                                        <option value="3" title="L">80x120cm</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="single-add-to-cart">
+                                                <form action="#" class="cart-quantity">
+                                                    <div class="quantity">
+                                                        <label>Quantity</label>
+                                                        <div class="cart-plus-minus">
+                                                            <input class="cart-plus-minus-box" value="1" type="text">
+                                                            <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                                            <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="add-to-cart" type="submit">Add to cart</button>
+                                                </form>
+                                            </div>
+                                            <div class="product-additional-info pt-25">
+                                                <a class="wishlist-btn" href="wishlist.html"><i class="fa fa-heart-o"></i>Add to wishlist</a>
+                                                <div class="product-social-sharing pt-25">
+                                                    <ul>
+                                                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                                        <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i>Google +</a></li>
+                                                        <li class="instagram"><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <!-- Quick View | Modal Area End Here -->
         </div>
+        <!-- Body Wrapper End Here -->
+        <!-- jQuery-V1.12.4 -->
+        <script src="frontend/js/vendor/jquery-1.12.4.min.js"></script>
+        <!-- Popper js -->
+        <script src="frontend/js/vendor/popper.min.js"></script>
+        <!-- Bootstrap V4.1.3 Fremwork js -->
+        <script src="frontend/js/bootstrap.min.js"></script>
+        <!-- Ajax Mail js -->
+        <script src="frontend/js/ajax-mail.js"></script>
+        <!-- Meanmenu js -->
+        <script src="frontend/js/jquery.meanmenu.min.js"></script>
+        <!-- Wow.min js -->
+        <script src="frontend/js/wow.min.js"></script>
+        <!-- Slick Carousel js -->
+        <script src="frontend/js/slick.min.js"></script>
+        <!-- Owl Carousel-2 js -->
+        <script src="frontend/js/owl.carousel.min.js"></script>
+        <!-- Magnific popup js -->
+        <script src="frontend/js/jquery.magnific-popup.min.js"></script>
+        <!-- Isotope js -->
+        <script src="frontend/js/isotope.pkgd.min.js"></script>
+        <!-- Imagesloaded js -->
+        <script src="frontend/js/imagesloaded.pkgd.min.js"></script>
+        <!-- Mixitup js -->
+        <script src="frontend/js/jquery.mixitup.min.js"></script>
+        <!-- Countdown -->
+        <script src="frontend/js/jquery.countdown.min.js"></script>
+        <!-- Counterup -->
+        <script src="frontend/js/jquery.counterup.min.js"></script>
+        <!-- Waypoints -->
+        <script src="frontend/js/waypoints.min.js"></script>
+        <!-- Barrating -->
+        <script src="frontend/js/jquery.barrating.min.js"></script>
+        <!-- Jquery-ui -->
+        <script src="frontend/js/jquery-ui.min.js"></script>
+        <!-- Venobox -->
+        <script src="frontend/js/venobox.min.js"></script>
+        <!-- Nice Select js -->
+        <script src="frontend/js/jquery.nice-select.min.js"></script>
+        <!-- ScrollUp js -->
+        <script src="frontend/js/scrollUp.min.js"></script>
+        <!-- Main/Activator js -->
+        <script src="frontend/js/main.js"></script>
     </body>
+
+<!-- index-231:38-->
 </html>
